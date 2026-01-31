@@ -1,21 +1,12 @@
-"use client";
-
-import React, { useState } from "react";
 import NavbarLogoSection from "./navLogoSection";
 import NavbarLinksSection from "./navLinksSection";
-
-const navItems = [
-  { name: "Home", href: "#" },
-  { name: "Menu", href: "#menu" },
-  { name: "Our Story", href: "#story" },
-  { name: "Contact", href: "#contact" },
-];
+import NavbarLinksSection2 from "./navLinksSection2";
 
 const Navbar = () => {
 
   return (
     // navbar parent
-    <nav className="border border-amber-500 max-w-11/12 md:max-w-10/12 mx-auto flex justify-between">
+    <nav className="max-w-11/12 md:max-w-10/12 mx-auto flex justify-between items-center">
         {/* logo section */}
         <section>
             <NavbarLogoSection/>
@@ -28,7 +19,7 @@ const Navbar = () => {
 
         {/* nav menu ECT section */}
         <section>
-            section 3
+            <NavbarLinksSection2/>
         </section>
     </nav>
   );
