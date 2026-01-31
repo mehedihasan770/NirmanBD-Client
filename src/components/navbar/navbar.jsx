@@ -13,7 +13,7 @@ const Navbar = () => {
         </section>
 
         {/* nav links section */}
-        <section>
+        <section className="hidden 2xl:block">
             <NavbarLinksSection/>
         </section>
 

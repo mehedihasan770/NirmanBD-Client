@@ -61,7 +61,7 @@ const ModernUserMenu = () => {
         onClick={() => setIsOpen(!isOpen)}
         className={`
           relative flex items-center justify-center
-          w-10 h-10 rounded-full cursor-pointer
+          w-11 h-11 rounded-full cursor-pointer
           bg-linear-to-br from-gray-100 to-gray-200
           shadow-sm hover:shadow-md
           border-2 transition-all duration-300

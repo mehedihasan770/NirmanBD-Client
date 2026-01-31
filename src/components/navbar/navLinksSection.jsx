@@ -23,7 +23,7 @@ const NavbarLinksSection = () => {
     };
 
     return (
-        <div className='flex items-center space-x-5 p-1'>
+        <div className='flex items-center space-x-4 p-1'>
             {
               navItems.map((l, i) => (
                 <div key={i} className='relative'>

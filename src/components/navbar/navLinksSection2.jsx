@@ -4,11 +4,12 @@ import Link from 'next/link';
 import React from 'react';
 import SearchComponent from './navbarSearch';
 import UserMenu from './UserMenu';
+import PhoneMenu from './phoneMenu';
 
 const NavbarLinksSection2 = () => {
   return (
-    <div className="flex items-center space-x-5 p-1">
-      <section>
+    <div className="flex items-center space-x-4 p-1">
+      <section className='hidden md:block'>
         <SearchComponent />
       </section>
       <div className="relative">
@@ -36,6 +37,9 @@ const NavbarLinksSection2 = () => {
       </div>
       <section>
         <UserMenu/>
+      </section>
+      <section className='block 2xl:hidden'>
+        <PhoneMenu/>
       </section>
     </div>
   );
