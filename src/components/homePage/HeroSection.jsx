@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import {motion} from 'framer-motion';
 
 const HeroSection = () => {
     return (
@@ -15,20 +16,40 @@ const HeroSection = () => {
         </div>
         <div className="w-full max-w-11/12 md:max-w-10/12 mx-auto text-white flex justify-between">
           <div>
-            <h1 className="md:text-[110px] lg:text-[150px] xl:text-[200px] 2xl:text-[250px] font-bold">
+            <motion.h1
+              initial={{x: -100, opacity: 0,rotateX: -15 }}
+              whileInView={{ x: 0, opacity: 1,rotateX: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{duration: 2,type: "spring",bounce: 0.4,damping: 12,mass: 1,}}
+              className="md:text-[110px] lg:text-[150px] xl:text-[200px] 2xl:text-[250px] font-bold">
               FORT
-            </h1>
-            <p className="lg:text-[23px] xl:text-[30.5px] 2xl:text-[38px] font-bold text-white/75 md:-mt-10 md:ml-2 lg:-mt-12 lg:ml-2 xl:-mt-17 xl:ml-4 2xl:-mt-20 2xl:ml-5">
+            </motion.h1>
+            <motion.p
+              initial={{x: -90, y: 50, opacity: 0,rotateX: -15 }}
+              whileInView={{ x: 0, y: 0, opacity: 1,rotateX: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{duration: 2,type: "spring",bounce: 0.4,damping: 12,mass: 1,}}
+              className="border-t-8 border-amber-500 lg:text-[23px] xl:text-[30.5px] 2xl:text-[38px] font-bold text-white/75 md:-mt-6 md:ml-2 lg:-mt-8 lg:ml-2 xl:-mt-13 xl:ml-4 2xl:-mt-16 2xl:ml-5">
               OTOL VORSA SOTHIK NIRMAN
-            </p>
+            </motion.p>
           </div>
           <div>
-            <h1 className="md:text-[110px] lg:text-[150px] xl:text-[200px] 2xl:text-[250px] font-bold">
+            <motion.h1
+              initial={{x: 100, opacity: 0,rotateX: -15 }}
+              whileInView={{ x: 0, opacity: 1,rotateX: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{duration: 2,type: "spring",bounce: 0.4,damping: 12,mass: 1}}
+              className="md:text-[110px] lg:text-[150px] xl:text-[200px] 2xl:text-[250px] font-bold">
               TUDE
-            </h1>
-            <p className="text-right lg:text-[23px] xl:text-[30.5px] 2xl:text-[38px] font-bold text-white/75 md:-mt-10 lg:-mt-12 lg:mr-1 xl:-mt-17 xl:mr-1.5 2xl:-mt-20 2xl:mr-2">
+            </motion.h1>
+            <motion.p
+              initial={{x: 90, y: 50, opacity: 0,rotateX: -15 }}
+              whileInView={{ x: 0, y: 0, opacity: 1,rotateX: 0 }}
+              viewport={{ once: false, amount: 0.3 }}
+              transition={{duration: 2,type: "spring",bounce: 0.4,damping: 12,mass: 1,}}
+              className="border-t-8 border-amber-500 text-right lg:text-[23px] xl:text-[30.5px] 2xl:text-[38px] font-bold text-white/75 md:-mt-6 lg:-mt-8 lg:mr-1 xl:-mt-13 xl:mr-1.5 2xl:-mt-16 2xl:mr-2">
               DERO VITTI UNNOTO KATHAMO
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="bg-white/50 hover:bg-amber-50 animate-bounce hover:text-amber-500 duration-500 text-black/75 cursor-pointer rounded-3xl absolute bottom-5">
