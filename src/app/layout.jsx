@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <header className="top-6 absolute z-50 w-full">
+        <header className="pt-3 fixed z-50 w-full">
           <Navbar />
         </header>
         <main>

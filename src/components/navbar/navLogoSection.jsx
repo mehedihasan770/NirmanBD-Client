@@ -1,10 +1,18 @@
+import Image from 'next/image';
 import React from 'react';
 
 const NavbarLogoSection = () => {
     return (
-        <>
-            <h1 className='text-3xl font-bold'>NirmanBD</h1>
-        </>
+      <>
+        <Image
+          src="/Logo.png"
+          alt="Logo"
+          width={120}
+          height={40}
+          className="w-35"
+          priority
+        />
+      </>
     );
 };
 
