@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const SignupPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#BABABA] dark:from-[#141414] to-[#F8F8F8] dark:to-[#3E3E3E] relative overflow-hidden flex items-center justify-center">
+    <div className="min-h-screen bg-linear-to-r from-[#BABABA] dark:from-[#141414] to-[#F8F8F8] dark:to-[#3E3E3E] relative overflow-hidden flex items-center justify-center">
       
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -15,23 +15,23 @@ const SignupPage = () => {
       </div>
 
       {/* Signup Form */}
-      <div className="relative z-10 w-full max-w-4/12 top-20 px-4">
-        <div className="bg-white/90 dark:bg-black backdrop-blur-sm rounded-3xl shadow-xl p-8 border border-gray-100">
+      <div className="relative z-10 w-full max-w-4/12 py-20 px-4">
+        <div className="bg-white/90 dark:bg-black backdrop-blur-sm rounded-3xl shadow-xl p-8 border border-gray-100 dark:border-gray-700">
 
           {/* Form */}
           <form className="space-y-5">
             {/* Name */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                আপনার নাম
+              <label className="block text-sm font-medium text-black dark:text-white mb-2">
+                FULL NAME
               </label>
               <div className="relative group">
-                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl group-focus-within:text-orange-500 transition-colors">
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl transition-colors">
                   👤
                 </span>
                 <input
                   type="text"
-                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all duration-300 hover:border-orange-300"
+                  className="w-full pl-12 pr-4 py-4 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-[#9f28e3] focus:border-transparent outline-none transition-all duration-300 hover:border-[#9f28e3]"
                   placeholder="মোঃ রহিম মিয়া"
                 />
               </div>
@@ -39,16 +39,16 @@ const SignupPage = () => {
 
             {/* Email */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                ইমেইল ঠিকানা
+              <label className="block text-sm font-medium text-black dark:text-white mb-2">
+                EMAIL
               </label>
               <div className="relative group">
-                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl group-focus-within:text-orange-500 transition-colors">
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl transition-colors">
                   ✉️
                 </span>
                 <input
                   type="email"
-                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all duration-300 hover:border-orange-300"
+                  className="w-full pl-12 pr-4 py-4 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-[#9f28e3] focus:border-transparent outline-none transition-all duration-300 hover:border-[#9f28e3]"
                   placeholder="rahim@nirmanbd.com"
                 />
               </div>
@@ -56,16 +56,16 @@ const SignupPage = () => {
 
             {/* Password */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                পাসওয়ার্ড
+              <label className="block text-sm font-medium text-black dark:text-white  mb-2">
+                PASSWORD
               </label>
               <div className="relative group">
-                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl group-focus-within:text-orange-500 transition-colors">
+                <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl transition-colors">
                   🔒
                 </span>
                 <input
                   type="password"
-                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all duration-300 hover:border-orange-300"
+                  className="w-full pl-12 pr-4 py-4 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-[#9f28e3] focus:border-transparent outline-none transition-all duration-300 hover:border-[#9f28e3]"
                   placeholder="********"
                 />
               </div>
@@ -87,7 +87,7 @@ const SignupPage = () => {
             {/* Submit */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-bold text-lg hover:from-orange-600 hover:to-orange-700 transform hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-orange-200 hover:shadow-xl"
+              className="w-full bg-linear-to-r from-[#9f28e3] to-[#9f28e3]/50 text-white py-4 rounded-xl font-bold text-lg transform hover:scale-[1.02] transition-all duration-300 shadow cursor-pointer"
             >
               সাইন আপ করুন
             </button>
@@ -100,7 +100,7 @@ const SignupPage = () => {
                 <div className="w-full border-t border-gray-200"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-white text-gray-500">
+                <span className="px-4 bg-white dark:bg-black text-gray-500">
                   অথবা সাইন আপ করুন
                 </span>
               </div>
@@ -120,14 +120,6 @@ const SignupPage = () => {
                 </button>
               ))}
             </div>
-          </div>
-
-          {/* Security Badge */}
-          <div className="mt-6 text-center">
-            <p className="text-xs text-gray-400 flex items-center justify-center space-x-1">
-              <span>🔒</span>
-              <span>SSL সুরক্ষিত সংযোগ</span>
-            </p>
           </div>
         </div>
       </div>

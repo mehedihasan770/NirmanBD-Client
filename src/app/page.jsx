@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HeroSection from "@/components/homePage/HeroSection";
 import HeroDetailsSection from "@/components/homePage/HeroDetailsSection";
 import ProductsSection from "@/components/homePage/ProductsSection";
+import Footer from "@/components/footer/Footer";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -51,7 +52,7 @@ export default function Home() {
   return (
     <main
       ref={mainContainerRef}
-      className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory relative bg-[#ede7de]"
+      className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory scroll relative bg-[#ede7de]"
       /* এখানে স্ক্রলবার হাইড করার স্টাইলগুলো ফেলে দেওয়া হয়েছে */
     >
       {/* পিলার কন্টেইনার */}
@@ -70,10 +71,11 @@ export default function Home() {
       </section>
 
       {/* ৩ নম্বর সেকশন */}
-      <div className="relative z-20 snap-start min-h-screen bg-[#0f0f0f] section-three"> 
+      <div className="relative z-20 snap-start min-h-screen bg-[#0f0f0f] section-three">
         <ProductsSection />
+        <Footer forceShow={true} />
       </div>
-      
+  
     </main>
   );
 }

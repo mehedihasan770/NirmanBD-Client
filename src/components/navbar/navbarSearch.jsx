@@ -29,7 +29,7 @@ const SearchComponent = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="outline-none text-black py-[3px] w-40 bg-transparent"
+              className="outline-none text-black py-0.75 w-40 bg-transparent"
             />
           </form>
         </div>
